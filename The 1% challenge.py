@@ -12,9 +12,9 @@ while answer != num:
         print("Wrong answer!")
         answer1 = str(input('Wanna continue trying? [y/n] '))
         if answer1 == 'y':
-            answer = int(input('Ok, so try to hit the correct number\nCorrect number: '))
+            answer = int(input('Ok, so try to hit the correct number\nCorrect number:'))
         else:
             print(emoji.emojize('\n\nYou succumbed by the power of a simple code, haha!:smiling_face_with_horns:\n\n'))
-        break
+            break
 if answer == num:
-    print('Ur lucky. We have a winner!')
+    print(f'Ur lucky. We have a winner!\nTotal tries: {c}')
